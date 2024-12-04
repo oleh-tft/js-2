@@ -8,151 +8,151 @@
 <body>
     <script>
         
-        // let age = prompt("Ваш вік");
-        // if (age < 0) {
-        //     alert("Ви не народились");
-        // } else if (age >= 0 && age < 12) {
-        //     alert("Ви - дитина");
-        // } else if (age >= 12 && age < 18) {
-        //     alert("Ви - підліток");
-        // }  else if (age >= 18 && age < 60) {
-        //     alert("Ви - дорослий");
-        // } else {
-        //     alert("Ви - пенсіонер");
-        // }
+        let age = prompt("Ваш вік");
+        if (age < 0) {
+            alert("Ви не народились");
+        } else if (age >= 0 && age < 12) {
+            alert("Ви - дитина");
+        } else if (age >= 12 && age < 18) {
+            alert("Ви - підліток");
+        }  else if (age >= 18 && age < 60) {
+            alert("Ви - дорослий");
+        } else {
+            alert("Ви - пенсіонер");
+        }
 
-        // let num = prompt("Число (0-9)");
-        // switch(parseInt(num)) {
-        //     case 0:
-        //         alert(")");
-        //         break;
-        //     case 1:
-        //         alert("!");
-        //         break;
-        //     case 2:
-        //         alert("@");
-        //         break;
-        //     case 3:
-        //         alert("#");
-        //         break;
-        //     case 4:
-        //         alert("$");
-        //         break;
-        //     case 5:
-        //         alert("%");
-        //         break;
-        //     case 6:
-        //         alert("^");
-        //         break;
-        //     case 7:
-        //         alert("&");
-        //         break;
-        //     case 8:
-        //         alert("*");
-        //         break;
-        //     case 9:
-        //         alert("(");
-        //         break;
-        // }
+        let num = prompt("Число (0-9)");
+        switch(parseInt(num)) {
+            case 0:
+                alert(")");
+                break;
+            case 1:
+                alert("!");
+                break;
+            case 2:
+                alert("@");
+                break;
+            case 3:
+                alert("#");
+                break;
+            case 4:
+                alert("$");
+                break;
+            case 5:
+                alert("%");
+                break;
+            case 6:
+                alert("^");
+                break;
+            case 7:
+                alert("&");
+                break;
+            case 8:
+                alert("*");
+                break;
+            case 9:
+                alert("(");
+                break;
+        }
 
-        // let num2 = prompt("Тризначне число");
-        // let first = Math.floor(num2 / 100) % 10;
-        // let second = Math.floor(num2 / 10) % 10;
-        // let third = num2 % 10;
-        // let similarDigits = first == second || first == third || second == third;
-        // alert(similarDigits ? "Є однакові цифри" : "Немає однакових цифр");
+        let num2 = prompt("Тризначне число");
+        let first = Math.floor(num2 / 100) % 10;
+        let second = Math.floor(num2 / 10) % 10;
+        let third = num2 % 10;
+        let similarDigits = first == second || first == third || second == third;
+        alert(similarDigits ? "Є однакові цифри" : "Немає однакових цифр");
 
-        // let year = prompt("Рік");
-        // let leapYear = false;
-        // if (year % 400 == 0 || ((year % 4 == 0) && (year % 100 != 0)))
-        //     leapYear = true;
-        // alert(leapYear ? "Високосний рік" : "Не високосний рік");
+        let year = prompt("Рік");
+        let leapYear = false;
+        if (year % 400 == 0 || ((year % 4 == 0) && (year % 100 != 0)))
+            leapYear = true;
+        alert(leapYear ? "Високосний рік" : "Не високосний рік");
 
-        // let num3 = prompt("П'ятизначне число");
-        // let n3first = Math.floor(num3 / 10000) % 10;
-        // let n3second = Math.floor(num3 / 1000) % 10;
-        // let n3fourth = Math.floor(num3 / 10) % 10;
-        // let n3fifth = num3 % 10;
-        // let palindrome = n3first == n3fifth && n3second == n3fourth;
-        // alert(palindrome ? "Число є паліндромом" : "Число не є паліндромом");
+        let num3 = prompt("П'ятизначне число");
+        let n3first = Math.floor(num3 / 10000) % 10;
+        let n3second = Math.floor(num3 / 1000) % 10;
+        let n3fourth = Math.floor(num3 / 10) % 10;
+        let n3fifth = num3 % 10;
+        let palindrome = n3first == n3fifth && n3second == n3fourth;
+        alert(palindrome ? "Число є паліндромом" : "Число не є паліндромом");
 
-        // const rateEur = 0.95;
-        // const rateUan = 7.27;
-        // const rateAzn = 1.70;
-        // let dollarAmount = prompt("Кількість доларів для обміну");
-        // let currencyAmount = 0.0;
-        // let cur = prompt("Оберіть валюту: \n1.EUR\n2.UAN\n3.AZN")
-        // switch(parseInt(cur)) {
-        //     case 1:
-        //         currencyAmount = dollarAmount * rateEur;
-        //         break;
-        //     case 2:
-        //         currencyAmount = dollarAmount * rateUan;
-        //         break;
-        //     case 3:
-        //         currencyAmount = dollarAmount * rateAzn;
-        //         break;
-        // }
-        // alert("Ви отримаєте " + currencyAmount);
+        const rateEur = 0.95;
+        const rateUan = 7.27;
+        const rateAzn = 1.70;
+        let dollarAmount = prompt("Кількість доларів для обміну");
+        let currencyAmount = 0.0;
+        let cur = prompt("Оберіть валюту: \n1.EUR\n2.UAN\n3.AZN")
+        switch(parseInt(cur)) {
+            case 1:
+                currencyAmount = dollarAmount * rateEur;
+                break;
+            case 2:
+                currencyAmount = dollarAmount * rateUan;
+                break;
+            case 3:
+                currencyAmount = dollarAmount * rateAzn;
+                break;
+        }
+        alert("Ви отримаєте " + currencyAmount);
 
-        // let sum = prompt("Сума покупки");
-        // let afterDiscount = sum;
-        // if (sum >= 200 && sum < 300) {
-        //     afterDiscount = sum * 0.97;
-        // } else if (sum >= 300 && sum < 500) {
-        //     afterDiscount = sum * 0.95;
-        // } else if (sum >= 500) {
-        //     afterDiscount = sum * 0.93;
-        // }
-        // alert("Ціна після знижки: " + Math.floor(afterDiscount));
+        let sum = prompt("Сума покупки");
+        let afterDiscount = sum;
+        if (sum >= 200 && sum < 300) {
+            afterDiscount = sum * 0.97;
+        } else if (sum >= 300 && sum < 500) {
+            afterDiscount = sum * 0.95;
+        } else if (sum >= 500) {
+            afterDiscount = sum * 0.93;
+        }
+        alert("Ціна після знижки: " + Math.floor(afterDiscount));
 
-        // let lengthCircle = prompt("Довжина кола");
-        // let areaSquare = prompt("Периметр квадрата");
-        // let sideSquare = areaSquare / 4;
-        // let radiusCircle = lengthCircle / (2 * Math.PI);
-        // let diamCricle = Math.floor(radiusCircle * 2);
-        // let canExist = diamCricle <= sideSquare;
-        // alert("Коло з діаметроом " + diamCricle + (canExist ? " поміститься" : " не поміститься"));
+        let lengthCircle = prompt("Довжина кола");
+        let areaSquare = prompt("Периметр квадрата");
+        let sideSquare = areaSquare / 4;
+        let radiusCircle = lengthCircle / (2 * Math.PI);
+        let diamCricle = Math.floor(radiusCircle * 2);
+        let canExist = diamCricle <= sideSquare;
+        alert("Коло з діаметроом " + diamCricle + (canExist ? " поміститься" : " не поміститься"));
 
-        // let score = 0;
-        // let q1 = prompt("Q1. Який найбільший океан на Землі? \n1. Атлантичний океан\n2. Індійський океан\n3. Тихий океан");
-        // if (parseInt(q1) == 3) {
-        //     score += 2;
-        // }
-        // let q2 = prompt("Q2. Яка країна є батьківщиною пірамід? \n1. Греція\n2. Єгипет\n3. Мексика");
-        // if (parseInt(q2) == 2) {
-        //     score += 2;
-        // }
-        // let q3 = prompt("Q3. Яке число є першим простим числом? \n1. 1\n2. 2\n3. 3");
-        // if (parseInt(q3) == 2) {
-        //     score += 2;
-        // }
-        // alert("Ви набрали " + score + " очок");
+        let score = 0;
+        let q1 = prompt("Q1. Який найбільший океан на Землі? \n1. Атлантичний океан\n2. Індійський океан\n3. Тихий океан");
+        if (parseInt(q1) == 3) {
+            score += 2;
+        }
+        let q2 = prompt("Q2. Яка країна є батьківщиною пірамід? \n1. Греція\n2. Єгипет\n3. Мексика");
+        if (parseInt(q2) == 2) {
+            score += 2;
+        }
+        let q3 = prompt("Q3. Яке число є першим простим числом? \n1. 1\n2. 2\n3. 3");
+        if (parseInt(q3) == 2) {
+            score += 2;
+        }
+        alert("Ви набрали " + score + " очок");
         
 
-        const daysInMonths = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-        let inpDay = parseInt(prompt("Введіть день"));
-        let inpMonth = parseInt(prompt("Введіть місяць")) - 1;
+
+
+        
+
+        let inpDay = parseInt(prompt("Введіть день (1-31)"));
+        let inpMonth = parseInt(prompt("Введіть місяць (1-12)"));
         let inpYear = parseInt(prompt("Введіть рік"));
-        let leapYear2 = (inpYear % 4 === 0 && inpYear % 100 !== 0) || (inpYear % 400 === 0);
-        if (leapYear2)
-            daysInMonths[1] = 29;
+        const days = [31, (inpYear % 4 == 0 && inpYear % 100 != 0) || (inpYear % 400 == 0) ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
-        inpDay++;
-    
-        if (inpDay > daysInMonths[inpMonth]) {
-            inpDay -= daysInMonths[inpMonth];
-            inpMonth++;
-
-            // Если месяц превышает 12, переходим на следующий год
-            if (inpMonth > 11) {
+        function checkMonths() {
+            if (inpMonth > 12) {
                 inpMonth -= 12;
                 inpYear++;
             }
         }
-        if (inpMonth > 11) {
-            inpMonth -= 12;
-            inpYear++;
+
+        checkMonths();
+    
+        if (inpDay > days[inpMonth - 1]) {
+            inpDay -= days[inpMonth - 1];
+            inpMonth++;
+
+            checkMonths();
         }
 
         alert("Дата: " + inpDay + "." + inpMonth + "." + inpYear);
